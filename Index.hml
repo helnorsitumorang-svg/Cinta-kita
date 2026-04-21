@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Untuk istriiku ❤️</title>
+</head>
+<body style="text-align:center; font-family:sans-serif; margin-top:50px;">
+
+  <h1>Halo Sayang ❤️</h1>
+
+  <input id="nama" placeholder="Helena istriiku">
+  <br><br>
+
+  <button onclick="mulai()">Klik di sini</button>
+
+  <p id="hasil"></p>
+
+  <script>
+    function mulai() {
+      let nama = document.getElementById("nama").value;
+
+      if (nama === "") {
+        document.getElementById("hasil").innerHTML = "Isi dulu ya 😄";
+      } else {
+        document.getElementById("hasil").innerHTML =
+          "Halo " + nama + " ❤️<br><br>Aku cuma mau bilang...<br><br><b>Aku sayang kamu Helena Tamba 💕</b>";
+      }
+    }
+  </script>
+
+</body>
+</html>
